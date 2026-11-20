@@ -4,7 +4,9 @@ import json
 import urllib.request
 from datetime import datetime
 
-def fetch_contributions(username="Shariar-Ahamed", token=None):
+def fetch_contributions(username=None, token=None):
+    if not username:
+        username = os.environ.get("GITHUB_REPOSITORY_OWNER", "Shariar-Ahamed-Ripon")
     # Method 1: Official GitHub GraphQL API (when token is available)
     if token:
         query = """
@@ -229,7 +231,8 @@ def generate_svg(daily_contributions, output_path="activity-graph.svg"):
 
 if __name__ == "__main__":
     token = os.environ.get("GITHUB_TOKEN")
-    data = fetch_contributions("Shariar-Ahamed", token=token)
+    owner = os.environ.get("GITHUB_REPOSITORY_OWNER", "Shariar-Ahamed-Ripon")
+    data = fetch_contributions(owner, token=token)
     out_dir = os.path.join(os.path.dirname(__file__), "..", "assets")
     os.makedirs(out_dir, exist_ok=True)
     generate_svg(data, os.path.join(out_dir, "activity-graph.svg"))

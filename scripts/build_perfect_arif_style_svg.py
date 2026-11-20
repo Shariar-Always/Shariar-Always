@@ -1,3 +1,4 @@
+import os
 import random
 import math
 import PIL.Image
@@ -280,7 +281,7 @@ def build_arif_style_svg(input_photo='F_Formal.png', output_svg='dark.svg', is_d
     scale_y = 1.4471
 
     svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="610" viewBox="0 0 1180 610" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" role="img" aria-label="Shariar Ahamed — profile.sh --live">
-<!-- Designed & Created Exclusively for @Shariar-Ahamed. Copyright (c) 2026 Shariar Ahamed. All Rights Reserved. -->
+<!-- Designed & Created Exclusively for @Shariar-Ahamed-Ripon. Copyright (c) 2026 Shariar Ahamed. All Rights Reserved. -->
 <defs>
 <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#7C3AED"><animate attributeName="stop-color" values="#7C3AED;#22D3EE;#10B981;#7C3AED" dur="10s" repeatCount="indefinite"/></stop>
@@ -383,7 +384,7 @@ def build_arif_style_svg(input_photo='F_Formal.png', output_svg='dark.svg', is_d
 
   <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.78s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="-8 0;0 0" dur="0.4s" begin="2.78s" fill="freeze"/><text x="470" y="480" font-size="13" textLength="655" lengthAdjust="spacingAndGlyphs"><tspan fill="{text_label}" font-weight="700">Grid.LinkedIn </tspan><tspan fill="{dot_leader}">............................................</tspan><tspan fill="{text_primary}" font-weight="600"> shariarahamed</tspan></text></g>
 
-  <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.90s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="-8 0;0 0" dur="0.4s" begin="2.90s" fill="freeze"/><text x="470" y="503" font-size="13" textLength="655" lengthAdjust="spacingAndGlyphs"><tspan fill="{text_label}" font-weight="700">Grid.GitHub </tspan><tspan fill="{dot_leader}">.........................................................</tspan><tspan fill="{text_primary}" font-weight="600"> @Shariar-Ahamed</tspan></text></g>
+  <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.90s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="-8 0;0 0" dur="0.4s" begin="2.90s" fill="freeze"/><text x="470" y="503" font-size="13" textLength="655" lengthAdjust="spacingAndGlyphs"><tspan fill="{text_label}" font-weight="700">Grid.GitHub </tspan><tspan fill="{dot_leader}">...................................................</tspan><tspan fill="{text_primary}" font-weight="600"> @Shariar-Ahamed-Ripon</tspan></text></g>
 
   <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="3.02s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="-8 0;0 0" dur="0.4s" begin="3.02s" fill="freeze"/><text x="470" y="526" font-size="13" textLength="655" lengthAdjust="spacingAndGlyphs"><tspan fill="{text_label}" font-weight="700">Grid.Facebook </tspan><tspan fill="{dot_leader}">......................................................</tspan><tspan fill="{text_primary}" font-weight="600"> @shahriar.thebrowncat</tspan></text></g>
 </g>
@@ -404,5 +405,11 @@ def build_arif_style_svg(input_photo='F_Formal.png', output_svg='dark.svg', is_d
     print(f"{output_svg} generated with smooth rounded caps and curved corners!")
 
 if __name__ == '__main__':
-    build_arif_style_svg('F_Formal.png', 'dark.svg', is_dark=True)
-    build_arif_style_svg('F_Formal.png', 'light.svg', is_dark=False)
+    assets_dir = os.path.join(os.path.dirname(__file__), '..', 'assets')
+    input_photo = os.path.join(assets_dir, 'F_Formal.png')
+    if not os.path.exists(input_photo) and os.path.exists('F_Formal.png'):
+        input_photo = 'F_Formal.png'
+    dark_svg = os.path.join(assets_dir, 'dark.svg')
+    light_svg = os.path.join(assets_dir, 'light.svg')
+    build_arif_style_svg(input_photo, dark_svg, is_dark=True)
+    build_arif_style_svg(input_photo, light_svg, is_dark=False)

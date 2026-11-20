@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Shariar-Ahamed&label=PROFILE+VIEWS&color=7c3aed&label_color=0b1222&style=flat" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=Shariar-Ahamed-Ripon&label=PROFILE+VIEWS&color=7c3aed&label_color=0b1222&style=flat" alt="Profile Views" />
 </p>
 
 <hr />
@@ -191,5 +191,5 @@
 
 <div align="center">
   <p>🔒 <strong>Copyright &amp; Intellectual Property Notice</strong></p>
-  <p><em>The custom terminal UI, dithered SVG assets, and 3-state morphing particle animations in this profile are exclusively created for <strong>Shariar Ahamed (<a href="https://github.com/Shariar-Ahamed">@Shariar-Ahamed</a>)</strong>. Copying, re-distributing, or modifying these design assets without explicit permission is strictly prohibited. Copyright &copy; 2026 Shariar Ahamed. All Rights Reserved.</em></p>
+  <p><em>The custom terminal UI, dithered SVG assets, and 3-state morphing particle animations in this profile are exclusively created for <strong>Shariar Ahamed (<a href="https://github.com/Shariar-Ahamed-Ripon">@Shariar-Ahamed-Ripon</a>)</strong>. Copying, re-distributing, or modifying these design assets without explicit permission is strictly prohibited. Copyright &copy; 2026 Shariar Ahamed. All Rights Reserved.</em></p>
 </div>
