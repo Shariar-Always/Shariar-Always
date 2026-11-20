@@ -5,13 +5,13 @@ import urllib.request
 import urllib.error
 
 FALLBACK_STATS = {
-    "total_stars": "39",
-    "total_commits": "2975",
-    "total_prs": "1",
+    "total_stars": "0",
+    "total_commits": "2",
+    "total_prs": "0",
     "total_issues": "0",
-    "public_repos": "63",
-    "followers": "7",
-    "grade": "A++"
+    "public_repos": "2",
+    "followers": "0",
+    "grade": "B"
 }
 
 def calculate_grade(stars, commits, prs, issues, repos):
@@ -135,7 +135,7 @@ def fetch_stats(username=None, token=None):
                             pass
                     
                     if all_time_commits > 0:
-                        commits = str(max(all_time_commits, int(FALLBACK_STATS["total_commits"])))
+                        commits = str(all_time_commits)
                     else:
                         commits = FALLBACK_STATS["total_commits"]
 
@@ -169,7 +169,7 @@ def fetch_stats(username=None, token=None):
                     if c_val.endswith("k"):
                         try:
                             k_num = float(c_val.replace("k", ""))
-                            commits = str(int(k_num * 1000)) if k_num != 2.4 else "2975"
+                            commits = str(int(k_num * 1000))
                         except Exception:
                             commits = c_val
                     else:

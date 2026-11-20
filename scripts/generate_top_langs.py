@@ -120,11 +120,16 @@ def generate_svg(languages, output_path="top-langs.svg"):
     col1_svg = []
     for i, lang in enumerate(col1):
         y_pos = 98 + (i * 23)
+        display_name = lang['name']
+        if display_name == "Jupyter Notebook":
+            display_name = "Jupyter"
+        elif len(display_name) > 13:
+            display_name = display_name[:12] + "…"
         col1_svg.append(f'''
     <g transform="translate(0, {y_pos})">
       <circle cx="30" cy="0" r="4" fill="{lang['color']}" stroke="#282a36" stroke-width="1.5" filter="url(#glow)"/>
       <text x="42" y="3.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="500" fill="#f8f8f2">
-        {lang['name']}
+        {display_name}
       </text>
       <text x="155" y="3.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="{lang['color']}" text-anchor="end">
         {lang['percent']}%
@@ -135,11 +140,16 @@ def generate_svg(languages, output_path="top-langs.svg"):
     col2_svg = []
     for i, lang in enumerate(col2):
         y_pos = 98 + (i * 23)
+        display_name = lang['name']
+        if display_name == "Jupyter Notebook":
+            display_name = "Jupyter"
+        elif len(display_name) > 13:
+            display_name = display_name[:12] + "…"
         col2_svg.append(f'''
     <g transform="translate(0, {y_pos})">
       <circle cx="180" cy="0" r="4" fill="{lang['color']}" stroke="#282a36" stroke-width="1.5" filter="url(#glow)"/>
       <text x="192" y="3.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="500" fill="#f8f8f2">
-        {lang['name']}
+        {display_name}
       </text>
       <text x="320" y="3.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="{lang['color']}" text-anchor="end">
         {lang['percent']}%
