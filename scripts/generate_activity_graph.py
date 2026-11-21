@@ -6,7 +6,7 @@ from datetime import datetime
 
 def fetch_contributions(username=None, token=None):
     if not username:
-        username = os.environ.get("GITHUB_REPOSITORY_OWNER", "Shariar-Ahamed-Ripon")
+        username = os.environ.get("GITHUB_REPOSITORY_OWNER", "Shariar-Always")
     # Method 1: Official GitHub GraphQL API (when token is available)
     if token:
         query = """
@@ -187,7 +187,7 @@ def generate_svg(daily_contributions, output_path="activity-graph.svg"):
 
   <!-- Centered Title -->
   <text x="{width / 2}" y="36" text-anchor="middle" fill="#f8f8f2" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700">
-    Shariar Ahamed Ripon's Contribution Graph
+    Shariar Ahamed's Contribution Graph
   </text>
 
   <!-- Y-Axis Vertical Label -->
@@ -231,7 +231,7 @@ def generate_svg(daily_contributions, output_path="activity-graph.svg"):
 
 if __name__ == "__main__":
     token = os.environ.get("GITHUB_TOKEN")
-    owner = os.environ.get("GITHUB_REPOSITORY_OWNER", "Shariar-Ahamed-Ripon")
+    owner = os.environ.get("GITHUB_REPOSITORY_OWNER", "Shariar-Always")
     data = fetch_contributions(owner, token=token)
     out_dir = os.path.join(os.path.dirname(__file__), "..", "assets")
     os.makedirs(out_dir, exist_ok=True)

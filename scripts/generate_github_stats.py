@@ -29,7 +29,7 @@ def calculate_grade(stars, commits, prs, issues, repos):
 
 def fetch_stats(username=None, token=None):
     if not username:
-        username = os.environ.get("GITHUB_REPOSITORY_OWNER", "Shariar-Ahamed-Ripon")
+        username = os.environ.get("GITHUB_REPOSITORY_OWNER", "Shariar-Always")
     stars = None
     commits = None
     prs = None
@@ -320,7 +320,7 @@ def generate_svg(stats, output_path="github-stats.svg"):
 
 if __name__ == "__main__":
     token = os.environ.get("GITHUB_TOKEN")
-    owner = os.environ.get("GITHUB_REPOSITORY_OWNER", "Shariar-Ahamed-Ripon")
+    owner = os.environ.get("GITHUB_REPOSITORY_OWNER", "Shariar-Always")
     stats = fetch_stats(owner, token=token)
     print(f"Current Live Stats: {stats}")
     out_dir = os.path.join(os.path.dirname(__file__), "..", "assets")

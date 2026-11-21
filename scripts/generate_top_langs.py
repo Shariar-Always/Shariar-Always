@@ -24,7 +24,7 @@ EXCLUDED_REPOS = {
     "Windows-Activator"
 }
 
-# 100% Mathematically Exact Real Data of Shariar-Ahamed-Ripon Handwritten Code
+# 100% Mathematically Exact Real Data of Shariar-Always Handwritten Code
 EXACT_REAL_LANGS = [
     {"name": "JavaScript", "percent": 47.50, "color": "#f1fa8c"},
     {"name": "HTML", "percent": 16.41, "color": "#ffb86c"},
@@ -38,7 +38,7 @@ EXACT_REAL_LANGS = [
 
 def fetch_github_languages(username=None, token=None, limit=10):
     if not username:
-        username = os.environ.get("GITHUB_REPOSITORY_OWNER", "Shariar-Ahamed-Ripon")
+        username = os.environ.get("GITHUB_REPOSITORY_OWNER", "Shariar-Always")
     headers = {"User-Agent": "GitHub-Stats-Script"}
     if token:
         headers["Authorization"] = f"token {token}"
@@ -200,7 +200,7 @@ def generate_svg(languages, output_path="top-langs.svg"):
 
 if __name__ == "__main__":
     token = os.environ.get("GITHUB_TOKEN")
-    owner = os.environ.get("GITHUB_REPOSITORY_OWNER", "Shariar-Ahamed-Ripon")
+    owner = os.environ.get("GITHUB_REPOSITORY_OWNER", "Shariar-Always")
     langs = fetch_github_languages(owner, token=token, limit=10)
     out_dir = os.path.join(os.path.dirname(__file__), "..", "assets")
     os.makedirs(out_dir, exist_ok=True)

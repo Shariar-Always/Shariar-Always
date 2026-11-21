@@ -27,7 +27,7 @@ def format_date_range(start_str, end_str):
 
 def get_year_contributions(year, username=None):
     if not username:
-        username = os.environ.get("GITHUB_REPOSITORY_OWNER", "Shariar-Ahamed-Ripon")
+        username = os.environ.get("GITHUB_REPOSITORY_OWNER", "Shariar-Always")
     url = f"https://github.com/users/{username}/contributions?from={year}-01-01&to={year}-12-31"
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     try:
@@ -50,7 +50,7 @@ def get_year_contributions(year, username=None):
 
 def fetch_streak_data(username=None, token=None):
     if not username:
-        username = os.environ.get("GITHUB_REPOSITORY_OWNER", "Shariar-Ahamed-Ripon")
+        username = os.environ.get("GITHUB_REPOSITORY_OWNER", "Shariar-Always")
     current_year = datetime.now().year
     all_daily = {}
     
@@ -202,7 +202,7 @@ def generate_svg(streak_data, output_path="assets/streak-stats.svg"):
 
 if __name__ == "__main__":
     token = os.environ.get("GITHUB_TOKEN")
-    owner = os.environ.get("GITHUB_REPOSITORY_OWNER", "Shariar-Ahamed-Ripon")
+    owner = os.environ.get("GITHUB_REPOSITORY_OWNER", "Shariar-Always")
     data = fetch_streak_data(owner, token=token)
     print(f"Live Multi-Year Streak Data: {data}")
     out_dir = os.path.join(os.path.dirname(__file__), "..", "assets")
