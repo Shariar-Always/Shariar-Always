@@ -181,8 +181,8 @@
   <a href="https://instagram.com/shahriar_thebrowncat"><img src="https://img.icons8.com/?size=100&id=nj0Uj45LGUYh&format=png&color=000000" height="40"></a>&nbsp;
   <a href="https://linkedin.com/in/shariarahamed"><img src="https://img.icons8.com/?size=100&id=kBCrQMzpQDLQ&format=png&color=000000" height="40"></a>&nbsp;
   <a href="https://twitter.com/ShariarAlways"><img src="https://img.icons8.com/?size=100&id=vzeEiquVUR7e&format=png&color=000000" height="40"></a>&nbsp;
-  <a href="mailto:shariaralways@gmail.com"><img src="https://img.icons8.com/?size=100&id=eFPBXQop6V2m&format=png&color=000000" height="40"></a>&nbsp;
-  <a href="https://www.shariarahamed.me/" target="_blank">
+  <a href="mailto:contact@shariarahamed.com"><img src="https://img.icons8.com/?size=100&id=eFPBXQop6V2m&format=png&color=000000" height="40"></a>&nbsp;
+  <a href="https://www.shariarahamed.com/" target="_blank">
     <img src="https://img.icons8.com/?size=100&id=zrTptiWiMTtu&format=png&color=000000" height="40" style="display:block; vertical-align:middle;">
   </a>
 </p>

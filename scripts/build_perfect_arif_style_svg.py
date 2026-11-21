@@ -305,7 +305,7 @@ def build_arif_style_svg(input_photo='F_Formal.png', output_svg='dark.svg', is_d
 <circle cx="30" cy="25.0" r="5.5" fill="#ff5f56"/>
 <circle cx="50" cy="25.0" r="5.5" fill="#ffbd2e"/>
 <circle cx="70" cy="25.0" r="5.5" fill="#27c93f"/>
-<text x="590.0" y="29.0" text-anchor="middle" font-size="12" fill="{text_dim}">shariaralways@gmail.com - % ./profile.sh --live</text>
+<text x="590.0" y="29.0" text-anchor="middle" font-size="12" fill="{text_dim}">contact@shariarahamed.com - % ./profile.sh --live</text>
 
 <!-- VISUAL.MAP Header (Subtle Gray Color #475569) -->
 <text x="38" y="74" font-size="11" font-weight="600" letter-spacing="3" fill="{text_gray}">VISUAL.MAP</text>
@@ -347,9 +347,9 @@ def build_arif_style_svg(input_photo='F_Formal.png', output_svg='dark.svg', is_d
 
 <!-- Email Pill Header -->
 <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.6s" fill="freeze"/>
-<rect x="470" y="98" width="245" height="24" rx="4" fill="{email_pill_bg}"/>
-<text x="479" y="115" font-size="13" font-weight="700" fill="{email_pill_text}">shariaralways@gmail.com</text>
-<line x1="725" y1="110" x2="1125" y2="110" stroke="rgba(255,255,255,0.10)"/>
+<rect x="470" y="98" width="260" height="24" rx="4" fill="{email_pill_bg}"/>
+<text x="479" y="115" font-size="13" font-weight="700" fill="{email_pill_text}">contact@shariarahamed.com</text>
+<line x1="740" y1="110" x2="1125" y2="110" stroke="rgba(255,255,255,0.10)"/>
 </g>
 
 <!-- Staggered Animated Data Rows (font-size 13px) -->
@@ -378,9 +378,9 @@ def build_arif_style_svg(input_photo='F_Formal.png', output_svg='dark.svg', is_d
 
   <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.42s" fill="freeze"/><text x="470" y="411" font-size="13" textLength="655" lengthAdjust="spacingAndGlyphs"><tspan fill="{text_dim}">- Contact </tspan><tspan fill="{dot_leader}">---------------------------------------------------------------------</tspan></text></g>
 
-  <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.54s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="-8 0;0 0" dur="0.4s" begin="2.54s" fill="freeze"/><text x="470" y="434" font-size="13" textLength="655" lengthAdjust="spacingAndGlyphs"><tspan fill="{text_label}" font-weight="700">Grid.Mail </tspan><tspan fill="{dot_leader}">.........................................</tspan><tspan fill="{text_primary}" font-weight="600"> shariaralways@gmail.com</tspan></text></g>
+  <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.54s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="-8 0;0 0" dur="0.4s" begin="2.54s" fill="freeze"/><text x="470" y="434" font-size="13" textLength="655" lengthAdjust="spacingAndGlyphs"><tspan fill="{text_label}" font-weight="700">Grid.Mail </tspan><tspan fill="{dot_leader}">.......................................</tspan><tspan fill="{text_primary}" font-weight="600"> contact@shariarahamed.com</tspan></text></g>
 
-  <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.66s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="-8 0;0 0" dur="0.4s" begin="2.66s" fill="freeze"/><text x="470" y="457" font-size="13" textLength="655" lengthAdjust="spacingAndGlyphs"><tspan fill="{text_label}" font-weight="700">Grid.Portfolio </tspan><tspan fill="{dot_leader}">....................................................</tspan><tspan fill="{text_primary}" font-weight="600"> shariarahamed.me</tspan></text></g>
+  <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.66s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="-8 0;0 0" dur="0.4s" begin="2.66s" fill="freeze"/><text x="470" y="457" font-size="13" textLength="655" lengthAdjust="spacingAndGlyphs"><tspan fill="{text_label}" font-weight="700">Grid.Portfolio </tspan><tspan fill="{dot_leader}">...................................................</tspan><tspan fill="{text_primary}" font-weight="600"> shariarahamed.com</tspan></text></g>
 
   <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.78s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="-8 0;0 0" dur="0.4s" begin="2.78s" fill="freeze"/><text x="470" y="480" font-size="13" textLength="655" lengthAdjust="spacingAndGlyphs"><tspan fill="{text_label}" font-weight="700">Grid.LinkedIn </tspan><tspan fill="{dot_leader}">............................................</tspan><tspan fill="{text_primary}" font-weight="600"> shariarahamed</tspan></text></g>
 
