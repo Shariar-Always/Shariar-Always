@@ -21,7 +21,7 @@
     <!-- Left Column: Total Contributions -->
     <g transform="translate(85, 0)">
       <text x="0" y="80" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="28px">
-        60
+        78
       </text>
       <text x="0" y="116" text-anchor="middle" fill="#f8f8f2" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="400" font-size="14px">
         Total Contributions
@@ -46,7 +46,7 @@
 
       <!-- Center Streak Number -->
       <text x="247.5" y="80" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="28px">
-        5
+        6
       </text>
 
       <!-- Current Streak Label -->
@@ -56,20 +56,20 @@
 
       <!-- Current Streak Range -->
       <text x="247.5" y="166" text-anchor="middle" fill="#80cbc4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="400" font-size="12px">
-        Nov 20 - Nov 24
+        Nov 20 - Nov 25
       </text>
     </g>
 
     <!-- Right Column: Longest Streak -->
     <g transform="translate(410, 0)">
       <text x="0" y="80" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="28px">
-        5
+        6
       </text>
       <text x="0" y="116" text-anchor="middle" fill="#f8f8f2" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="400" font-size="14px">
         Longest Streak
       </text>
       <text x="0" y="146" text-anchor="middle" fill="#80cbc4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="400" font-size="12px">
-        Nov 20 - Nov 24
+        Nov 20 - Nov 25
       </text>
     </g>
   </g>
